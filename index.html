@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9288770962100185"
+    crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="naver-site-verification" content="b366dbb6459aafa1c91f8f26b783724b86199d71" />
+  <meta name="description" content="Easily convert centimeters to inches with our fast and mobile-friendly cm to inch converter. Accurate, instant, and perfect for students, designers, and DIYers." />
+  <title>CM to Inch Converter</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f7fa;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      background: #2b7a78;
+      color: #fff;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    main {
+      flex: 1;
+      padding: 30px 20px;
+      max-width: 500px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    label, input {
+      display: block;
+      width: 100%;
+      font-size: 1.1rem;
+    }
+
+    input {
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+    }
+
+    #result {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    footer {
+      padding: 20px;
+      text-align: center;
+      background: #def2f1;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      main {
+        padding: 20px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>CM to Inch Converter</h1>
+  </header>
+
+  <main>
+    <label for="cmInput">Enter length in centimeters:</label>
+    <input type="number" id="cmInput" placeholder="e.g. 100" oninput="convertCmToInch()" />
+    <div id="result"></div>
+  </main>
+
+  <footer>
+    <!-- Google AdSense code (Replace 'ca-pub-XXXX' with your real AdSense ID) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9288770962100185"
+            crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-9288770962100185"
+        data-ad-slot="6399153707"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </footer>
+
+  <script>
+    function convertCmToInch() {
+      const cm = parseFloat(document.getElementById("cmInput").value);
+      const resultDiv = document.getElementById("result");
+
+      if (!isNaN(cm)) {
+        const inches = cm / 2.54;
+        resultDiv.textContent = `${cm} cm is approximately ${inches.toFixed(2)} inches.`;
+      } else {
+        resultDiv.textContent = "";
+      }
+    }
+  </script>
+
+</body>
+</html>

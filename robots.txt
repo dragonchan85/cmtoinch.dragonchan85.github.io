@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /private/
+Allow: /
+
+Sitemap: https://cmtoinch.yesnomark.com/sitemap.xml
